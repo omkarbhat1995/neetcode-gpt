@@ -28,7 +28,7 @@ class TransformerBlock(nn.Module):
         embedded = embedded + self.linear_network(self.second_norm(embedded))
         # Return result rounded to 4 decimal places
         return torch.round(embedded,decimals = 4)
-        pass
+        
 
     class MultiHeadedSelfAttention(nn.Module):
 
